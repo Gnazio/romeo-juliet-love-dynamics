@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "romeo-juliet-love-dynamics"
+version = "1.0.0"
+description = "Romeo & Juliet as a 2x2 linear system: an interactive phase portrait of two people's feelings."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Giacomo Ignesti" }]
+keywords = ["differential-equations", "dynamical-systems", "phase-portrait",
+            "matplotlib", "tkinter", "education", "strogatz"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "numpy>=1.23",
+    "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+gif = ["pillow>=9.1"]
+dev = ["pytest>=7.0", "pillow>=9.1"]
+
+[project.scripts]
+romeo-juliet = "romeo_juliet.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR-GITHUB-USERNAME/romeo-juliet-love-dynamics"
+Issues = "https://github.com/YOUR-GITHUB-USERNAME/romeo-juliet-love-dynamics/issues"
+
+[tool.setuptools]
+packages = ["romeo_juliet"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error::DeprecationWarning"]
