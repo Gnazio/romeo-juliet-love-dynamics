@@ -27,7 +27,7 @@ dt⎣y(t)⎦   ⎣c  d⎦ ⎣y⎦
 ```
 
 The textbook case is `a = 0, b = -1, c = 1, d = 0`: Romeo cools off the moment
-Juliet warms up, and Juliet warms up the moment Romeo does. Then **M** is a 90°
+Juliet warms up the moment Romeo does. Then **M** is a 90°
 rotation matrix, the solution starting from `(1, 0)` is exactly
 
 ```
@@ -37,7 +37,7 @@ x(t) = cos t        y(t) = sin t
 and the two of them go round and round forever, never both in love at the same
 time for long. The eigenvalues are `±i` — a pure rotation, no growth, no decay.
 
-Change the four numbers and you change the ending. The eigenvalues of **M** decide
+Change the four numbers, and you change the ending. The eigenvalues of **M** decide
 everything: real and positive is runaway passion, real and opposite signs is a
 knife-edge saddle, complex with a negative real part is a spiral into
 indifference.
@@ -125,7 +125,7 @@ affair.solve([1.0, 0.0], [0, 3.14159])     # -> [[1, 0], [-1, 0]]
 
 ## How it works
 
-The system is linear, so it does not need a numerical integrator at all. For a
+The system is linear, so it doesn't need a numerical integrator. For a
 2×2 matrix, Cayley–Hamilton collapses the series for `exp(Mt)` into three cases —
 distinct real eigenvalues, a complex pair, or a repeated one — and
 `romeo_juliet/model.py` uses that closed form. Every trajectory you see is exact
@@ -165,8 +165,7 @@ linear systems in:
 
 The framing of this repository — Juliet's love rising as Romeo's attention
 falls, `M` as a 90° rotation with `[1 0]` for Romeo and `[0 -1]` for Juliet —
-follows a write-up by **@ORIGINAL-AUTHOR** ([link](ORIGINAL-POST-URL)), which is
-what prompted the code.
+follows a write-up by Instagram love story.
 
 > A note on the convention used here: with `dx/dt = -y` and `dy/dt = x`, it is
 > Romeo who cools when Juliet warms, and Juliet who warms when Romeo does. Swap
