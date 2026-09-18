@@ -35,7 +35,7 @@ x(t) = cos t        y(t) = sin t
 ```
 
 and the two of them go round and round forever, never both in love at the same
-time for long. The eigenvalues are `±i` — a pure rotation, no growth, no decay.
+time for long. The eigenvalues are `±i`, a pure rotation, no growth, no decay.
 
 Change the four numbers, and you change the ending. The eigenvalues of **M** decide
 everything: real and positive is runaway passion, real and opposite signs is a
@@ -71,7 +71,7 @@ Debian/Ubuntu it is `sudo apt install python3-tk`).
 * **two hearts** that swell with how strongly each person feels and crack open
   when the feeling turns to loathing;
 * sliders for `a, b, c, d` and for how they each feel on day one;
-* a live verdict — centre, saddle, spiral, node — with the trace, the
+* a live verdict centre, saddle, spiral, node with the trace, the
   determinant and both eigenvalues;
 * eight ready-made relationships, a **Random** button, and **Save** for a PNG.
 
@@ -81,12 +81,12 @@ Keyboard: `space` play/pause, `r` restart, `esc` quit.
 
 | Relationship | M | Ending |
 | --- | --- | --- |
-| Fickle Romeo & eager Juliet | `[[0, -1], [1, 0]]` | Centre — the endless carousel |
-| Two cautious lovers | `[[-1, 2], [2, -1]]` | Saddle — love fest or war, decided on day one |
+| Fickle Romeo & eager Juliet | `[[0, -1], [1, 0]]` | Centre —> the endless carousel |
+| Two cautious lovers | `[[-1, 2], [2, -1]]` | Saddle —> love fest or war, decided on day one |
 | Fire and ice | `[[1, -1], [1, -1]]` | Line of fixed points |
-| Peas in a pod | `[[1, 1], [1, 1]]` | Line of fixed points — unbounded |
-| Doomed from the start | `[[-0.4, -1.5], [1.5, -0.4]]` | Stable spiral — it fizzles out |
-| Escalating rollercoaster | `[[0.25, -1.5], [1.5, 0.25]]` | Unstable spiral — louder every lap |
+| Peas in a pod | `[[1, 1], [1, 1]]` | Line of fixed points —> unbounded |
+| Doomed from the start | `[[-0.4, -1.5], [1.5, -0.4]]` | Stable spiral —> it fizzles out |
+| Escalating rollercoaster | `[[0.25, -1.5], [1.5, 0.25]]` | Unstable spiral —> louder every lap |
 | Romeo the robot | `[[0, 0], [1, 0]]` | Line of fixed points |
 | Out of touch with their own feelings | `[[0, 1], [1, 0]]` | Saddle |
 
