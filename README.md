@@ -163,8 +163,8 @@ linear systems in:
 * Strogatz, S. H. *Nonlinear Dynamics and Chaos*, §5.3 and its exercises — where
   the fickle/eager pair and the whole taxonomy of endings come from.
 
-The framing of this repository — Juliet's love rising as Romeo's attention
-falls, `M` as a 90° rotation with `[1 0]` for Romeo and `[0 -1]` for Juliet —
+The framing of this repository: Juliet's love rising as Romeo's attention
+falls, `M` as a 90° rotation with `[1 0]` for Romeo and `[0 -1]` for Juliet, the idea
 follows a write-up by Instagram love story.
 
 > A note on the convention used here: with `dx/dt = -y` and `dy/dt = x`, it is
